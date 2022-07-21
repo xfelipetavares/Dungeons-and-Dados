@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/* body::after {
+    content: "";
+    background-color: #6272a4;
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #282a36	;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #50fa7b;
+}
+
+
+#multiplicador {
+    background-color: none;
+    color: white;
+    width: 4rem;
+
+}
+h1 {
+    color: #f8f8f2;
+    margin-block: 2rem;
+    font-size: 4rem;
+}
+.buttonSoma {
+    width: 30px;
+    height: 30px;
+}
+.vantagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rowButton {
+    width: 10rem;
+    height: 3rem;
+    background: #ff79c6;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cleanButton {
+    width: 3rem;
+    height: 3rem;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.cards {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    gap: 2rem;
+}
+
+.cards input {
+    border:none;
+    background-color: #6272a4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 100%;
+    color: #f8f8f2;
+}
+
+.dado {
+    background: #6272a4;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+}
