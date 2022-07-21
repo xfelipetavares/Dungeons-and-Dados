@@ -26,6 +26,34 @@ body {
     font-size: 1.6rem;
     color: #50fa7b;
 }
+.wrapper {
+    max-width: 30rem;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+
+#header img {
+    width: 11.1rem;
+}
+h1 {
+    color: #f8f8f2;
+    margin-block: 2rem;
+    font-size: 4rem;
+    width: 11.1rem;
+    text-align: left;
+}
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: left;
+}
 
 
 #multiplicador {
@@ -33,11 +61,6 @@ body {
     color: white;
     width: 4rem;
 
-}
-h1 {
-    color: #f8f8f2;
-    margin-block: 2rem;
-    font-size: 4rem;
 }
 .buttonSoma {
     width: 30px;
@@ -98,10 +121,4 @@ h1 {
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
-}
-
-h3 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 4rem;
 }
