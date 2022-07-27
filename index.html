@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,22 +20,22 @@
             <h1>Dungeons and Dados</h1>
             <img src="assets/logo_dado.svg" alt="">
         </header>
-        
+
         <div class="cards">
             <div class="dado">
                 <h3>D100</h3>
                 <button class="rowButton" onclick="xamaAleatorio(true, 100, 'resultDadoD100', 'multiplicadorD100', 'resultDadoSomadoD100')">Rodar</button>
-
+                
                 <p>Vantagem</p>
                 <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD100">
-
+                
                 <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD100', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD100" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD100', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD100" class="resultDado">
                 <button class="cleanButton" id="cleanerD100" onclick="cleaner('resultDadoD100', 'multiplicadorD100', 'resultDadoSomadoD100')"><img src="assets/botaoLimpar2.svg"
@@ -53,7 +55,7 @@
                     <input type="text" value="1" id="multiplicadorD20" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD20', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD20" class="resultDado">
                 <button class="cleanButton" id="cleanerD20" onclick="cleaner('resultDadoD20', 'multiplicadorD20', 'resultDadoSomadoD20')"><img src="assets/botaoLimpar2.svg"
@@ -73,7 +75,7 @@
                     <input type="text" value="1" id="multiplicadorD12" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD12', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD12" class="resultDado">
                 <button class="cleanButton" id="cleanerD12" onclick="cleaner('resultDadoD12', 'multiplicadorD12', 'resultDadoSomadoD12')"><img src="assets/botaoLimpar2.svg"
@@ -93,7 +95,7 @@
                     <input type="text" value="1" id="multiplicadorD10" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD10', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD10" class="resultDado">
                 <button class="cleanButton" id="cleanerD10" onclick="cleaner('resultDadoD10', 'multiplicadorD10', 'resultDadoSomadoD10')"><img src="assets/botaoLimpar2.svg"
@@ -113,7 +115,7 @@
                     <input type="text" value="1" id="multiplicadorD10" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD8', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD8" class="resultDado">
                 <button class="cleanButton" id="cleanerD8" onclick="cleaner('resultDadoD8', 'multiplicadorD8', 'resultDadoSomadoD8')"><img src="assets/botaoLimpar2.svg"
@@ -133,7 +135,7 @@
                     <input type="text" value="1" id="multiplicadorD6" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD6', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD6" class="resultDado">
                 <button class="cleanButton" id="cleanerD6" onclick="cleaner('resultDadoD6', 'multiplicadorD6', 'resultDadoSomadoD6')"><img src="assets/botaoLimpar2.svg"
@@ -153,7 +155,7 @@
                     <input type="text" value="1" id="multiplicadorD4" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD4', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD4" class="resultDado">
                 <button class="cleanButton" id="cleanerD4" onclick="cleaner('resultDadoD4', 'multiplicadorD4', 'resultDadoSomadoD4')"><img src="assets/botaoLimpar2.svg"
@@ -173,7 +175,7 @@
                     <input type="text" value="1" id="multiplicadorD3" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD3', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD3" class="resultDado">
                 <button class="cleanButton" id="cleanerD3" onclick="cleaner('resultDadoD3', 'multiplicadorD3', 'resultDadoSomadoD3')"><img src="assets/botaoLimpar2.svg"
@@ -193,7 +195,7 @@
                     <input type="text" value="1" id="multiplicadorD2" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD2', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-
+                <hr class="linha">
                 <p>Resultado</p>
                 <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD2" class="resultDado">
                 <button class="cleanButton" id="cleanerD2" onclick="cleaner('resultDadoD2', 'multiplicadorD2', 'resultDadoSomadoD2')"><img src="assets/botaoLimpar2.svg"
@@ -202,6 +204,11 @@
 
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <p>Feito com 💜 por Felipe Tavares</p>
+        </div>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>

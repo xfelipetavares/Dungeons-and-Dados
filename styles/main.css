@@ -5,19 +5,19 @@
 }
 
 :root {
-    
-    --Background:	#282a36;
-    --Current:	#44475a;
-    --Foreground:	#f8f8f2;
-    --Comment:	#6272a4;
-    --Cyan:	#8be9fd;
-    --Green:	#50fa7b;
-    --Orange:	#ffb86c;
-    --Pink:	#ff79c6;
-    --Purple:	#bd93f9;
-    --Red:	#ff5555;
-    --Yellow:	#f1fa8c;
-    
+
+    --Background: #282a36;
+    --Current: #44475a;
+    --Foreground: #f8f8f2;
+    --Comment: #6272a4;
+    --Cyan: #8be9fd;
+    --Green: #50fa7b;
+    --Orange: #ffb86c;
+    --Pink: #ff79c6;
+    --Purple: #bd93f9;
+    --Red: #ff5555;
+    --Yellow: #f1fa8c;
+
     font-size: 62.5%;
     font-family: 'Albert Sans', sans-serif;
 }
@@ -29,23 +29,15 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    color: var(--Green);
-}
-.wrapper {
-    max-width: 30rem;
-}
-#header {
-    display: flex;
-    flex-direction: row;
-    height: 20rem;
-    width: 100%;
-    
-    justify-content: space-between;
+    color: var(--Foreground);
 }
 
-#header img {
-    width: 11.1rem;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 h1 {
     color: var(--Foreground);
     margin-block: 2rem;
@@ -53,24 +45,83 @@ h1 {
     width: 11.1rem;
     text-align: left;
 }
+
 h3 {
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
     text-align: left;
+    color: var(--Green);
 }
 
+p {
+    color: var(--Cyan);
+}
+
+/* ================= HEADER ================ */
+#header {
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#header img {
+    width: 11.1rem;
+}
+
+/* ================= MAIN ================ */
+.wrapper {
+    max-width: 30rem;
+}
+
+/* ================= CARDS ================ */
+.cards {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    gap: 2rem;
+}
+
+.cards input {
+    border: none;
+    background-color: var(--Comment);
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    width: 100%;
+    color: var(--Foreground);
+}
+
+/* ================= DICE ================ */
+.dado {
+    background: var(--Comment);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+}
 
 .dado .multiplicador {
     background-color: none;
     color: var(--Foreground);
     width: 4rem;
+    margin-bottom: 2rem;
 
 }
+
 .buttonSoma {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
 }
+
 .multiplicadorResultado {
     display: flex;
     flex-direction: row;
@@ -86,6 +137,25 @@ h3 {
     border-radius: 0.5rem;
     color: var(--Foreground);
     text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+.linha {
+    width: 70%;
+    border-color: var(--Pink);
+}
+.resultDadoSomado {
+    margin-bottom: 2rem;
+}
+
+.resultDadoSomado::placeholder {
+    color: var(--Foreground);
+    opacity: 20%;
+}
+
+.resultDado::placeholder {
+    color: var(--Foreground);
+    opacity: 20%;
 }
 
 .cleanButton {
@@ -98,42 +168,13 @@ h3 {
     text-transform: uppercase;
 }
 
-.resultDadoSomado::placeholder{
-    color: var(--Foreground);
-    opacity: 20%;
-}
-.resultDado::placeholder {
-    color: var(--Foreground);
-    opacity: 20%;
-}
-.resultDadoSomado {
-    border: 1px solid red;
-}
-.cards {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 30rem;
-    gap: 2rem;
-}
-
-.cards input {
-    border:none;
-    background-color: var(--Comment);
-    text-align: center;
-    font-weight: 700;
-    font-size: 3rem;
+/* ================= FOOTER ================ */
+footer {
+    background: var(--Current);
     width: 100%;
-    color: var(--Foreground);
-}
-
-.dado {
-    background: var(--Comment);
-    border-radius: 1rem;
-    padding: 2rem;
+    height: 5rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
+    margin-top: 1rem;
 }
