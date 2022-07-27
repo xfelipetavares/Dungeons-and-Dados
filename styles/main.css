@@ -121,6 +121,9 @@ p {
     height: 3rem;
     margin-bottom: 2rem;
 }
+.buttonSoma:hover {
+    cursor: pointer;
+}
 
 .multiplicadorResultado {
     display: flex;
@@ -140,6 +143,10 @@ p {
     margin-bottom: 2rem;
 
 }
+.rowButton:hover {
+    cursor: pointer;
+}
+
 .linha {
     width: 70%;
     border-color: var(--Pink);
@@ -167,6 +174,10 @@ p {
     color: var(--Foreground);
     text-transform: uppercase;
 }
+.cleanButton:hover {
+    cursor: pointer;
+}
+
 
 /* ================= FOOTER ================ */
 footer {
