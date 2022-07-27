@@ -5,26 +5,31 @@
 }
 
 :root {
-    font-size: 64.2%;
+    
+    --Background:	#282a36;
+    --Current:	#44475a;
+    --Foreground:	#f8f8f2;
+    --Comment:	#6272a4;
+    --Cyan:	#8be9fd;
+    --Green:	#50fa7b;
+    --Orange:	#ffb86c;
+    --Pink:	#ff79c6;
+    --Purple:	#bd93f9;
+    --Red:	#ff5555;
+    --Yellow:	#f1fa8c;
+    
+    font-size: 62.5%;
     font-family: 'Albert Sans', sans-serif;
 }
-
-/* body::after {
-    content: "";
-    background-color: #6272a4;
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
 
 body {
     display: flex;
     flex-direction: column;
-    background: #282a36	;
+    background: var(--Background);
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
-    color: #50fa7b;
+    color: var(--Green);
 }
 .wrapper {
     max-width: 30rem;
@@ -32,7 +37,7 @@ body {
 #header {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 20rem;
     width: 100%;
     
     justify-content: space-between;
@@ -42,7 +47,7 @@ body {
     width: 11.1rem;
 }
 h1 {
-    color: #f8f8f2;
+    color: var(--Foreground);
     margin-block: 2rem;
     font-size: 4rem;
     width: 11.1rem;
@@ -58,7 +63,7 @@ h3 {
 
 .dado .multiplicador {
     background-color: none;
-    color: white;
+    color: var(--Foreground);
     width: 4rem;
 
 }
@@ -76,10 +81,10 @@ h3 {
 .rowButton {
     width: 10rem;
     height: 3rem;
-    background: #ff79c6;
+    background: var(--Pink);
     border: none;
     border-radius: 0.5rem;
-    color: white;
+    color: var(--Foreground);
     text-transform: uppercase;
 }
 
@@ -89,16 +94,16 @@ h3 {
     background: none;
     border: none;
     border-radius: 0.5rem;
-    color: white;
+    color: var(--Foreground);
     text-transform: uppercase;
 }
 
 .resultDadoSomado::placeholder{
-    color: white;
+    color: var(--Foreground);
     opacity: 20%;
 }
 .resultDado::placeholder {
-    color: white;
+    color: var(--Foreground);
     opacity: 20%;
 }
 .resultDadoSomado {
@@ -114,16 +119,16 @@ h3 {
 
 .cards input {
     border:none;
-    background-color: #6272a4;
+    background-color: var(--Comment);
     text-align: center;
     font-weight: 700;
     font-size: 3rem;
     width: 100%;
-    color: #f8f8f2;
+    color: var(--Foreground);
 }
 
 .dado {
-    background: #6272a4;
+    background: var(--Comment);
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
