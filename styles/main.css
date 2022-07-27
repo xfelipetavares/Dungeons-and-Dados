@@ -121,6 +121,7 @@ p {
     height: 3rem;
     margin-bottom: 2rem;
 }
+
 .buttonSoma:hover {
     cursor: pointer;
 }
@@ -143,6 +144,7 @@ p {
     margin-bottom: 2rem;
 
 }
+
 .rowButton:hover {
     cursor: pointer;
 }
@@ -151,6 +153,7 @@ p {
     width: 70%;
     border-color: var(--Pink);
 }
+
 .resultDadoSomado {
     margin-bottom: 2rem;
 }
@@ -174,6 +177,7 @@ p {
     color: var(--Foreground);
     text-transform: uppercase;
 }
+
 .cleanButton:hover {
     cursor: pointer;
 }
