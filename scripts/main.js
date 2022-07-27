@@ -51,6 +51,7 @@ function sobeDesce(multiplicador, verificaSobeDesce){
 
 }
 
-// function cleaner(){
-
-// }
+function cleaner(resultado, multiplicador2){
+    document.getElementById(`${resultado}`).value = ""
+    document.getElementById(`${multiplicador2}`).value = "1"
+}
