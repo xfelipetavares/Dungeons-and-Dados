@@ -59,16 +59,22 @@ p {
 }
 
 /* ================= HEADER ================ */
-#header {
+#header .logo {
     display: flex;
     flex-direction: row;
-    height: 20rem;
+    height: 17rem;
     width: 100%;
     justify-content: space-between;
 }
 
-#header img {
+#header .logo img {
     width: 11.1rem;
+}
+#header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 /* ================= MAIN ================ */
