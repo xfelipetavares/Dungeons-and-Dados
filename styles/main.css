@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 10px;
+    font-size: 64.2%;
     font-family: 'Albert Sans', sans-serif;
 }
 
@@ -93,7 +93,17 @@ h3 {
     text-transform: uppercase;
 }
 
-
+.resultDadoSomado::placeholder{
+    color: white;
+    opacity: 20%;
+}
+.resultDado::placeholder {
+    color: white;
+    opacity: 20%;
+}
+.resultDadoSomado {
+    border: 1px solid red;
+}
 .cards {
     justify-content: center;
     display: flex;

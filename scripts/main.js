@@ -1,21 +1,24 @@
-let resultDadoInput
-let num1
-let verifica100 = false
-let verificaSobeDesce = false
-
-function xamaAleatorio(verifica100, num1, resultDadoInput, multi){
+function xamaAleatorio(verifica100, num1, resultDadoInput, multi, resultDadoSomado){
     let resultDado = document.getElementById(`${resultDadoInput}`)
     let multiNumber = parseInt(document.getElementById(multi).value)
+    let resultDadoSomado2 = parseFloat(document.getElementById(`${resultDadoSomado}`).value)
 
-    multiplicador(multiNumber, resultDado, verifica100, num1)
+
+    multiplicador(multiNumber, resultDado, verifica100, num1, resultDadoSomado2)
 }
 
-function multiplicador(value, result, verifica100, num1){
+function multiplicador(value, result, verifica100, num1, resultDadoSomado2){
     var random = 0
     for(let i = 0; i < value; i++){
         random += randomNumber(verifica100, num1)
     }
-    result.value = random
+
+    if(resultDadoSomado2 >= 1){
+        result.value = random + resultDadoSomado2
+    } else {
+        result.value = random
+    }
+    
 }
 
 function randomNumber(verifica100, num1){
@@ -51,7 +54,9 @@ function sobeDesce(multiplicador, verificaSobeDesce){
 
 }
 
-function cleaner(resultado, multiplicador2){
+function cleaner(resultado, multiplicador2, resultDadoSomado){
     document.getElementById(`${resultado}`).value = ""
     document.getElementById(`${multiplicador2}`).value = "1"
+    document.getElementById(`${resultDadoSomado}`).value = ""
 }
+

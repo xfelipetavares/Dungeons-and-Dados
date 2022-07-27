@@ -22,121 +22,182 @@
         <div class="cards">
             <div class="dado">
                 <h3>D100</h3>
-                <button class="rowButton" onclick="xamaAleatorio(true, 100, 'resultDadoD100', 'multiplicadorD100')">Rodar</button>
-                <input type="text" name="" id="resultDadoD100">
-                <input type="text" name="" id="resultDadoSomado">
+                <button class="rowButton" onclick="xamaAleatorio(true, 100, 'resultDadoD100', 'multiplicadorD100', 'resultDadoSomadoD100')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD100">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD100', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD100" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD100', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD100" onclick="cleaner('resultDadoD100', 'multiplicadorD100')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
+
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD100" class="resultDado">
+                <button class="cleanButton" id="cleanerD100" onclick="cleaner('resultDadoD100', 'multiplicadorD100', 'resultDadoSomadoD100')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
             </div>
 
             <div class="dado">
                 <h3>D20</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 20, 'resultDadoD20', 'multiplicadorD20')">Rodar</button>
-                <input type="text" name="" id="resultDadoD20">
+                <button class="rowButton" onclick="xamaAleatorio(false, 20, 'resultDadoD20', 'multiplicadorD20', 'resultDadoSomadoD20')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD20">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD20', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD20" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD20', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD20" onclick="cleaner('resultDadoD20', 'multiplicadorD20')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
-            </div>
 
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD20" class="resultDado">
+                <button class="cleanButton" id="cleanerD20" onclick="cleaner('resultDadoD20', 'multiplicadorD20', 'resultDadoSomadoD20')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
+            </div>
 
             <div class="dado">
                 <h3>D12</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 12, 'resultDadoD12', 'multiplicadorD12')">Rodar</button>
-                <input type="text" name="" id="resultDadoD12">
+                <button class="rowButton" onclick="xamaAleatorio(false, 12, 'resultDadoD12', 'multiplicadorD12', 'resultDadoSomadoD12')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD12">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD12', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD12" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD12', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD12" onclick="cleaner('resultDadoD12', 'multiplicadorD12')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
-            </div>
 
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD12" class="resultDado">
+                <button class="cleanButton" id="cleanerD12" onclick="cleaner('resultDadoD12', 'multiplicadorD12', 'resultDadoSomadoD12')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
+            </div>
+            
             <div class="dado">
                 <h3>D10</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 10, 'resultDadoD10', 'multiplicadorD10')">Rodar</button>
-                <input type="text" name="" id="resultDadoD10">
+                <button class="rowButton" onclick="xamaAleatorio(false, 10, 'resultDadoD10', 'multiplicadorD10', 'resultDadoSomadoD10')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD10">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD10', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD10" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD10', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD10" onclick="cleaner('resultDadoD10', 'multiplicadorD10')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
-            </div>
 
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD10" class="resultDado">
+                <button class="cleanButton" id="cleanerD10" onclick="cleaner('resultDadoD10', 'multiplicadorD10', 'resultDadoSomadoD10')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
+            </div>
+            
             <div class="dado">
                 <h3>D8</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 8, 'resultDadoD8', 'multiplicadorD8')">Rodar</button>
-                <input type="text" name="" id="resultDadoD8">
+                <button class="rowButton" onclick="xamaAleatorio(false, 8, 'resultDadoD8', 'multiplicadorD8', 'resultDadoSomadoD8')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD8">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD8', false)"><img src="assets/botaoMenos.svg" alt=""></div>
-                    <input type="text" value="1" id="multiplicadorD8" class="multiplicador">
+                    <input type="text" value="1" id="multiplicadorD10" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD8', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD8" onclick="cleaner('resultDadoD8', 'multiplicadorD8')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
-            </div>
 
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD8" class="resultDado">
+                <button class="cleanButton" id="cleanerD8" onclick="cleaner('resultDadoD8', 'multiplicadorD8', 'resultDadoSomadoD8')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
+            </div>
+            
             <div class="dado">
                 <h3>D6</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 6, 'resultDadoD6', 'multiplicadorD6')">Rodar</button>
-                <input type="text" name="" id="resultDadoD6">
+                <button class="rowButton" onclick="xamaAleatorio(false, 6, 'resultDadoD6', 'multiplicadorD6', 'resultDadoSomadoD6')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD6">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD6', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD6" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD6', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD6" onclick="cleaner('resultDadoD6', 'multiplicadorD6')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
+
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD6" class="resultDado">
+                <button class="cleanButton" id="cleanerD6" onclick="cleaner('resultDadoD6', 'multiplicadorD6', 'resultDadoSomadoD6')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
             </div>
 
             <div class="dado">
                 <h3>D4</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 4, 'resultDadoD4', 'multiplicadorD4')">Rodar</button>
-                <input type="text" name="" id="resultDadoD4">
+                <button class="rowButton" onclick="xamaAleatorio(false, 4, 'resultDadoD4', 'multiplicadorD4', 'resultDadoSomadoD4')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD4">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD4', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD4" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD4', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD4" onclick="cleaner('resultDadoD4', 'multiplicadorD4')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
+
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD4" class="resultDado">
+                <button class="cleanButton" id="cleanerD4" onclick="cleaner('resultDadoD4', 'multiplicadorD4', 'resultDadoSomadoD4')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
             </div>
 
             <div class="dado">
                 <h3>D3</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 3, 'resultDadoD3', 'multiplicadorD3')">Rodar</button>
-                <input type="text" name="" id="resultDadoD3">
+                <button class="rowButton" onclick="xamaAleatorio(false, 3, 'resultDadoD3', 'multiplicadorD3', 'resultDadoSomadoD3')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD3">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD3', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD3" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD3', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD3" onclick="cleaner('resultDadoD3', 'multiplicadorD3')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
-            </div>
 
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD3" class="resultDado">
+                <button class="cleanButton" id="cleanerD3" onclick="cleaner('resultDadoD3', 'multiplicadorD3', 'resultDadoSomadoD3')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
+            </div>
+            
             <div class="dado">
                 <h3>D2</h3>
-                <button class="rowButton" onclick="xamaAleatorio(false, 2, 'resultDadoD2', 'multiplicadorD2')">Rodar</button>
-                <input type="text" name="" id="resultDadoD2">
+                <button class="rowButton" onclick="xamaAleatorio(false, 2, 'resultDadoD2', 'multiplicadorD2', 'resultDadoSomadoD2')">Rodar</button>
+
+                <p>Vantagem</p>
+                <input type="number" placeholder="Nenhuma" class="resultDadoSomado"  id="resultDadoSomadoD2">
+
+                <p>Multiplicador</p>
                 <div class="multiplicadorResultado">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD2', false)"><img src="assets/botaoMenos.svg" alt=""></div>
                     <input type="text" value="1" id="multiplicadorD2" class="multiplicador">
                     <div class="buttonSoma" onclick="sobeDesce('multiplicadorD2', true)"><img src="assets/botaoSoma.svg" alt=""></div>
                 </div>
-                <button class="cleanButton" id="cleanerD2" onclick="cleaner('resultDadoD2', 'multiplicadorD2')"><img src="assets/botaoLimpar1.svg"
-                        alt=""></button>
+
+                <p>Resultado</p>
+                <input type="text" placeholder="Rode o Dado" name="" id="resultDadoD2" class="resultDado">
+                <button class="cleanButton" id="cleanerD2" onclick="cleaner('resultDadoD2', 'multiplicadorD2', 'resultDadoSomadoD2')"><img src="assets/botaoLimpar2.svg"
+                    alt=""></button>
             </div>
 
         </div>
